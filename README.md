@@ -6,14 +6,23 @@ combining cgi-mapserver spawn-fcgi and start-stop-daemon for nginx usage
 Requirements (Ubuntu 12.04)
 
 sudo apt-get install python-software-properties
+
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+
 sudo apt-get update
 
 sudo apt-get install libgd2-xpm-dev
+
 sudo apt-get install cgi-mapserver mapserver-bin
+
 sudo apt-get install nginx
+
 sudo apt-get install spawn-fcgi
 
+
+sudo cp mapserver-fcgi-daemon /etc/init.d/mapserver-fcgi-daemon
+
+sudo chmod +x /etc/init.d/mapserver-fcgi-daemon
 
 Usage:
 
